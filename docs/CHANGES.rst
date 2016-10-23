@@ -6,6 +6,9 @@ Changelog
 
 Fixes:
 
+- Fix imports from Globals that was removed in Zope4
+  [pbauer]
+
 - Typo in the documentation.
   [ale-rt]
 

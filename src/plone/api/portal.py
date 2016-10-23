@@ -42,8 +42,8 @@ else:
     # PrintingMailHost only patches in debug mode.
     # plone.api.env.debug_mode cannot be used here, because .env imports this
     # file
-    import Globals
-    PRINTINGMAILHOST_ENABLED = Globals.DevelopmentMode
+    from App.config import getConfiguration
+    PRINTINGMAILHOST_ENABLED = getConfiguration().debug_mode
 
 
 def get():
